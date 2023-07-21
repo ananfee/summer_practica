@@ -1,10 +1,3 @@
-fibonacci = lambda n: [fib(x) for x in range(n)]
-def fib(n):
-    if n <= 0:
-        return 0
-    elif n == 1:
-        return 1
-    else:
-        return fib(n-1) + fib(n-2)
-
-print(fibonacci(10))
+n = int(input("Введите число: "))
+fib = lambda n, a=0, b=1: [a] + fib(n, b, a + b) if b <= n else [a]
+print("Последовательность чисел Фиббоначи, не привышающих ", n, ":", fib(n))
