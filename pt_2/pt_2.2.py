@@ -9,4 +9,4 @@ print()
 arr.insert(num - 1, name)
 for i in range(len(arr)):
     s = arr[i]
-    print(s)  
+    print(s)
